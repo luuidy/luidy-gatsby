@@ -7,7 +7,7 @@ export default function IndexPage() {
   return(
     <>
         <Navbar/>
-      <h1>Welcome</h1>
+      <h1>Hello World</h1>
     </>
   )
 }

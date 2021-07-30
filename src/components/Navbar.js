@@ -1,24 +1,19 @@
-import React from "react"
+import React, {useState, useRef} from "react"
 import {RiVipDiamondFill} from 'react-icons/ri'
 import {BsBag} from 'react-icons/bs'
 
 import "../styles/components/navbar.scss"
 
 const Navbar = () =>{
+    const search = useRef('')
     return (
         <nav>
             <RiVipDiamondFill className="icon" size="4em"/>
             <form className="search">
-                <label htmlFor="header-search">
-                    <span className="visually-hidden">Search blog posts</span>
+                <input className="search__input" required type="text" ref={search}/>
+                <label htmlFor="" className="search__label">
+                    Pesquisar...
                 </label>
-                <input
-                    type="text"
-                    id="header-search"
-                    placeholder="Search blog posts"
-                    name="s" 
-                />
-                <button type="submit">Search</button>
             </form>
             <div className="profile-container">
                 <div className="profile-container__user">
