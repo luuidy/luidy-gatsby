@@ -26,3 +26,10 @@ body{
     font-size:  16px;
     overflow-x: hidden !important;
 }
+
+.index{
+  display: flex;
+  padding: 0rem 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}

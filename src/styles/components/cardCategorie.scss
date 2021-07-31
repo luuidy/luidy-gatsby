@@ -1,0 +1,19 @@
+.card{
+    border: 1px solid black;
+    flex: 1 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    margin: .5rem;
+
+    &__content{
+        border: 1px solid black;
+        width: 200px;
+        height: 100px;
+        
+        h1{
+            text-align: center;
+        }
+    }
+}
