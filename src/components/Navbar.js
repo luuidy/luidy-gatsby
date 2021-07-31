@@ -1,6 +1,5 @@
 import React, {useState, useRef} from "react"
 import {IoBagOutline} from 'react-icons/io5'
-import {RiShoppingBagLine} from 'react-icons/ri'
 
 import icon from '../images/diamond.png'
 import "../styles/components/navbar.scss"
@@ -27,7 +26,8 @@ const Navbar = () =>{
                     <IoBagOutline size="3.2rem"/>
                     <span className="profile-container__bag--counter">2</span>
                 </div>
-                <div className="wrapper" onClick={()=>setOpen(!open)}>
+            </div>
+            <div className="wrapper" onClick={()=>setOpen(!open)}>
                     <div
                         className={`wrapper circle ${
                         open ? "wrapper close" : "wrapper icon"
@@ -37,8 +37,7 @@ const Navbar = () =>{
                         <span className="line middle"></span>
                         <span className="line bottom"></span>
                     </div>
-                </div>
-            </div>
+               </div>
         </nav>
     )
 }
