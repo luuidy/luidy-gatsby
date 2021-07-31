@@ -9,36 +9,55 @@ const Navbar = () =>{
     const [open, setOpen] = useState(false)
 
     return (
-        <nav>
+        <>
+         <div className={`${open ? "wrap open" : "wrap"}`}>
             <img src={icon} alt="icon"/>
-            <form className="search">
-                <input className="search__input" required type="text" ref={search}/>
-                <label htmlFor="" className="search__label">
-                    Pesquisar...
-                </label>
-            </form>
-            <div className="profile-container">
-                <div className="profile-container__user">
-                    <div className="profile-container__user--div"/>
-                    <span>Entrar</span>
-                </div>
-                <div className="profile-container__bag">
-                    <IoBagOutline size="3.2rem"/>
-                    <span className="profile-container__bag--counter">2</span>
+                <div className="wrap__container">
+                    <div className="wrap__user">
+                        <div className="wrap__user--div"/>
+                        <span>Entrar</span>
+                    </div>
+                    <div className="wrap__bag">
+                        <div className="wrap__bag--icon">
+                            <IoBagOutline size="3.2rem"/>
+                            <span className="wrap__bag--counter">2</span>
+                        </div>
+                        <span>Bolsa</span>
+                    </div>
                 </div>
             </div>
-            <div className="wrapper" onClick={()=>setOpen(!open)}>
-                    <div
-                        className={`wrapper circle ${
-                        open ? "wrapper close" : "wrapper icon"
-                        }`}
-                    >
-                        <span className="line top"></span>
-                        <span className="line middle"></span>
-                        <span className="line bottom"></span>
+            <nav>
+                <img src={icon} alt="icon"/>
+                <form className="search">
+                    <input className="search__input" required type="text" ref={search}/>
+                    <label htmlFor="" className="search__label">
+                        Pesquisar...
+                    </label>
+                </form>
+                <div className="profile-container">
+                    <div className="profile-container__user">
+                        <div className="profile-container__user--div"/>
+                        <span>Entrar</span>
                     </div>
-               </div>
-        </nav>
+                    <div className="profile-container__bag">
+                        <IoBagOutline size="3.2rem"/>
+                        <span className="profile-container__bag--counter">2</span>
+                    </div>
+                </div>
+                <div className="wrapper" onClick={()=>setOpen(!open)}>
+                        <div
+                            className={`wrapper circle ${
+                            open ? "wrapper close" : "wrapper icon"
+                            }`}
+                        >
+                            <span className="line top"></span>
+                            <span className="line middle"></span>
+                            <span className="line bottom"></span>
+                        </div>
+                </div>
+            </nav>
+
+        </>
     )
 }
 
