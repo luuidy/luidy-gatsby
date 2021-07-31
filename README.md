@@ -1,4 +1,4 @@
-1. Instalar depedências
+1. Instalar dependências
   ```sh
   npm install 
     ou
