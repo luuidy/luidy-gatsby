@@ -5,10 +5,19 @@ nav{
     padding: 2.5rem 3.8rem;
     justify-content: space-between;
     position: relative;
+    transition: all .3s ease;
+    
+    *{
+    }
 
    img{
-       width: 4rem;
+       width: 6vh;
    }
+
+   // responsivo
+    @media screen and (max-width: 1200px) {
+        padding: 1.5rem 2.8rem;
+    }
 }
 
 .search{
@@ -103,4 +112,63 @@ nav{
             top: 38%;
         }
     }
+}
+
+.wrapper{
+    display: none;
+  margin: 0 auto;
+  position: relative;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.4s;
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    position: relative;
+  }
+
+  .line {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 8px;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+  }
+
+  .close .top {
+    transform: rotate(45deg);
+    top: 48%;
+    background-color: black;
+  }
+
+  .close .middle,
+  .close .bottom {
+    transform: rotate(-45deg);
+    top: 48%;
+    background-color: black;
+  }
+
+  .top {
+    top: 18%;
+  }
+
+  .middle {
+    top: 48%;
+  }
+
+  .bottom {
+    top: 78%;
+  }
+
+  &:hover {
+    .line {
+      background-color: var(--color-primary);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    display: block;
+  }
 }

@@ -7,6 +7,8 @@ import "../styles/components/navbar.scss"
 
 const Navbar = () =>{
     const search = useRef('')
+    const [open, setOpen] = useState(false)
+
     return (
         <nav>
             <img src={icon} alt="icon"/>
@@ -25,9 +27,21 @@ const Navbar = () =>{
                     <IoBagOutline size="3.2rem"/>
                     <span className="profile-container__bag--counter">2</span>
                 </div>
+                <div className="wrapper" onClick={()=>setOpen(!open)}>
+                    <div
+                        className={`wrapper circle ${
+                        open ? "wrapper close" : "wrapper icon"
+                        }`}
+                    >
+                        <span className="line top"></span>
+                        <span className="line middle"></span>
+                        <span className="line bottom"></span>
+                    </div>
+                </div>
             </div>
         </nav>
     )
 }
+
 
 export default Navbar
