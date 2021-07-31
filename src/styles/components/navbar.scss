@@ -44,7 +44,7 @@ nav{
 
 
     &__input:focus{
-        border-bottom: 1px solid rgb(0, 0, 0);
+        border-bottom: 1px solid var(--color-primary);
 
     }
 
@@ -98,7 +98,7 @@ nav{
         }
 
         span{
-            font-weight: 400;
+            font-weight: 500;
             line-height: 10px;
             color: black;
             transition: all .3s ease;
@@ -122,8 +122,8 @@ nav{
         }
         &--counter{
             position: absolute;
-            font-weight: 200;
-            left: 42%;
+            font-weight: 400;
+            left: 43%;
             top: 38%;
         }
     }
@@ -264,7 +264,7 @@ nav{
         }
         &--counter{
             position: absolute;
-            font-weight: 200;
+            font-weight: 400;
             left: 40%;
             top: 38%;
         }
