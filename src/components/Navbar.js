@@ -1,6 +1,6 @@
 import React, {useState, useRef} from "react"
 import {IoBagOutline} from 'react-icons/io5'
-
+import {BiSearch} from 'react-icons/bi'
 import icon from '../images/diamond.png'
 import "../styles/components/navbar.scss"
 
@@ -29,10 +29,8 @@ const Navbar = () =>{
             <nav>
                 <img src={icon} alt="icon"/>
                 <form className="search">
-                    <input className="search__input" required type="text" ref={search}/>
-                    <label htmlFor="" className="search__label">
-                        Pesquisar...
-                    </label>
+                    <input className="search__input" required placeholder="Pesquisar..." type="text" ref={search}/>
+                    <BiSearch className="search__icon"/>
                 </form>
                 <div className="profile-container">
                     <div className="profile-container__user">
