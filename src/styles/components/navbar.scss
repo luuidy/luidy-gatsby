@@ -37,25 +37,25 @@ nav{
         width: 100%;
         border: none;  
         font-size: 18px;
-        border-radius: 60px;
         outline: none;
         background-color: var(--color-grey-3);
         border: 1px solid transparent;
-        padding: 1rem 0rem;
+        padding: .9rem 0rem;
+        border-radius: 2px;
         padding-left: 1.5rem;
         padding-right: 4rem;
         box-sizing: content-box;
-        transition: background-color .3s ease-in;
+        transition: background-color .3s ease;
     }
 
     &__icon{
         position: absolute;
-        right: .7%;
-        background-color: black;
-        color: white;
+        right: .5%;
+        background-color: white;
+        color: black;
         padding: .6rem;
+        border-radius: 2px;
         font-size: 1.3rem;
-        border-radius: 50%;
         cursor: pointer;
         transition: all .3s ease-in-out;
 
@@ -65,13 +65,15 @@ nav{
     }
 
     &__input:focus{
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
+        border: 1px solid rgba(0, 0, 0, 0.555);
+        
     }
 
     &__input:focus + &__icon{
-        background-color: white;
-        color: black;
+        background-color: black;
+        color: white;
 
     }
 
@@ -114,8 +116,8 @@ nav{
         align-items: center;
         margin-right: 2rem;
         cursor: pointer;
-        padding: .2rem .8rem .2rem .2rem;
-        border-radius: 1rem;
+        padding: .4rem .6rem;
+        border-radius: 2px;
         transition: all .3s ease-out;
 
         .profile-container__user--div{
@@ -145,10 +147,6 @@ nav{
         padding: .2rem;
         transition: all .3s ease;
 
-        &:hover{
-            background-color: rgba(240, 240, 240, 0.705);
-            border-radius: 20px;
-        }
         &--counter{
             position: absolute;
             font-weight: 400;
@@ -267,7 +265,7 @@ nav{
             width: 3.2rem;
             height: 3.2rem;   
             border-radius: 50%;
-            background-color: var(--color-grey);
+            background-color: var(--color-grey-3);
             margin-right: .8rem;
         }
     }
