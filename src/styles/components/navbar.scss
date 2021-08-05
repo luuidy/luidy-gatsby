@@ -50,14 +50,15 @@ nav{
 
     &__icon{
         position: absolute;
-        right: .5%;
+        right: 0%;
+        margin-right: .4rem;
         background-color: white;
         color: black;
         padding: .6rem;
         border-radius: 2px;
         font-size: 1.3rem;
         cursor: pointer;
-        transition: all .3s ease-in-out;
+        transition: all .3s ease;
 
         &:hover{
             transform: scale(1.1);
