@@ -1,6 +1,7 @@
 import * as React from "react"
 import Navbar from "../components/Navbar"
 import CardCategorie from "../components/CardCategorie"
+import Footer from '../components/Footer'
 
 import "../styles/index.scss"
 
@@ -14,8 +15,8 @@ export default function IndexPage() {
         <CardCategorie nome={"calçados"} imagem={"https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_960_720.jpg"}/>
         <CardCategorie nome={"Feminino"} imagem="https://cdn.pixabay.com/photo/2017/08/01/11/48/woman-2564660_960_720.jpg"/>
         <CardCategorie nome={"Masculino"} imagem={"https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/08/Peaky-Blinders.jpg"}/>
-
       </article>
+      <Footer/>
     </>
   )
 }
