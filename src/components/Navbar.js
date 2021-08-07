@@ -19,7 +19,7 @@ const Navbar = () =>{
                     </div>
                     <div className="wrap__bag">
                         <div className="wrap__bag--icon">
-                            <IoBagOutline size="3.2rem"/>
+                            <IoBagOutline/>
                             <span className="wrap__bag--counter">2</span>
                         </div>
                         <span>Bolsa</span>
@@ -38,7 +38,7 @@ const Navbar = () =>{
                         <span>Entrar</span>
                     </div>
                     <div className="profile-container__bag">
-                        <IoBagOutline size="3.2rem"/>
+                        <IoBagOutline/>
                         <span className="profile-container__bag--counter">2</span>
                     </div>
                 </div>
@@ -53,8 +53,8 @@ const Navbar = () =>{
                             <span className="line bottom"></span>
                         </div>
                 </div>
-            </nav>
 
+            </nav>
         </>
     )
 }

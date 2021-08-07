@@ -9,6 +9,16 @@ export default function IndexPage() {
   return(
     <>
       <Navbar/>
+      <div className="sub-navbar">
+        <div className="sub-navbar__line"/>
+            <li>
+              <span>Novos</span>
+              <span>Promoções</span>
+              <span>Sobre</span>
+              <span>Contato</span>
+            </li>
+          <div className="sub-navbar__line"/>
+        </div>
       <article className="index">
         <CardCategorie nome={"camisas"} imagem="https://images.pexels.com/photos/4066293/pexels-photo-4066293.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"/>
         <CardCategorie nome={"jaquetas"} imagem="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"/>

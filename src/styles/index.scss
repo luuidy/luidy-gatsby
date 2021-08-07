@@ -13,7 +13,7 @@ body,
   --color-black-1: #EEEEEE;
   --color-black-3: #7a7a7a;
 
-  --color-grey-1: #5a5a5a;
+  --color-grey-1: #636363;
   --color-grey-2: #9c9c9c94;
   --color-grey-3: #EEEEEE;
 
@@ -32,11 +32,48 @@ body{
     font-size:  18px;
     font-weight: 500;
     overflow-x: hidden !important;
+    padding: 0rem 3rem;
+    color: var(--color-grey-1);
+
 }
 
 .index{
   display: flex;
-  padding: 0rem 2rem;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+
+
+//page indicator
+.sub-navbar{
+  margin-left: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 3rem;
+
+  &__line{
+    width: 40%;
+    height: 1px;
+    background-color: var(--color-grey-3);
+  }
+  li{
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    span{
+      color: var(--color-grey-1);
+      font-weight: 500;
+      margin: 0 .8rem;
+      cursor: pointer;
+      transition: all .3s;
+      &:hover{
+        color: black;
+      }
+  }
+  }
+ 
 }
