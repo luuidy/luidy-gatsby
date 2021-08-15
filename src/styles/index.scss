@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
+/* Open Sans */ @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+
 body,
 #___gatsby,
 #gatsby-focus-wrapper {
@@ -27,7 +29,8 @@ body,
 }
 
 body{
-  font-family: 'Rajdhani', sans-serif;
+   // font-family: 'Rajdhani', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     text-decoration: none !important;
     font-size:  18px;
     font-weight: 500;

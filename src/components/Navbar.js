@@ -1,6 +1,7 @@
 import React, {useState, useRef} from "react"
-import {IoBagOutline} from 'react-icons/io5'
-import {BiSearch} from 'react-icons/bi'
+import {IoBagOutline, IoBagHandleOutline} from 'react-icons/io5'
+import {BiSearch, BiShoppingBag} from 'react-icons/bi'
+import {FiUser} from 'react-icons/fi'
 import icon from '../images/diamond.png'
 import "../styles/components/navbar.scss"
 
@@ -34,11 +35,17 @@ const Navbar = () =>{
                 </form>
                 <div className="profile-container">
                     <div className="profile-container__user">
-                        <div className="profile-container__user--div"/>
+                        <FiUser className="profile-container__user--icon"/>
                         <span>Entrar</span>
+                        <ul className="profile-container__user--details">
+                            <div className="profile-container__user--arrow-up"></div>
+                            <li>Login</li>
+                            <li>Meus Pedidos</li>
+                            <li>Detalhes</li>
+                        </ul>
                     </div>
                     <div className="profile-container__bag">
-                        <IoBagOutline/>
+                        <IoBagHandleOutline/>
                         <span className="profile-container__bag--counter">2</span>
                     </div>
                 </div>
