@@ -2,7 +2,7 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 .5rem;
+    padding: 0 3rem;
     margin-bottom: 2rem;
     margin-top: 2.5rem;
     justify-content: space-between;
@@ -112,6 +112,7 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
     &__user{
         display: flex;
         align-items: center;
@@ -139,8 +140,8 @@ nav{
             position: absolute;
             background-color: white;
             width: 150px;
-            top: 2.5rem;
-            right: 2.5rem;
+            top: 2.6rem;
+            right: 1.5rem;
             padding: .6rem .8rem;
             border: 1px solid black;
 

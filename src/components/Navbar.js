@@ -1,7 +1,8 @@
 import React, {useState, useRef} from "react"
 import {IoBagOutline, IoBagHandleOutline} from 'react-icons/io5'
-import {BiSearch, BiShoppingBag} from 'react-icons/bi'
+import {BiSearch} from 'react-icons/bi'
 import {FiUser} from 'react-icons/fi'
+import { Link } from "gatsby"
 import icon from '../images/diamond.png'
 import "../styles/components/navbar.scss"
 
@@ -39,7 +40,7 @@ const Navbar = () =>{
                         <span>Entrar</span>
                         <ul className="profile-container__user--details">
                             <div className="profile-container__user--arrow-up"></div>
-                            <li>Login</li>
+                            <Link to="/login"><li>Login</li></Link>
                             <li>Meus Pedidos</li>
                             <li>Detalhes</li>
                         </ul>
