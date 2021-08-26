@@ -13,3 +13,84 @@
         }
     }
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+//////////////////////////////////// ENTRAR ////////////////////////////////////
+
+.entrar{
+    width: 40%;
+    position: relative;
+
+    &__header{
+        margin-bottom: 3rem;
+
+        h1{
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+    }
+}
+
+
+.cadastrar{
+    background-color: burlywood;
+    width: 40%;
+}
+
+//////////////////////////////////// FORMULÁRIO ////////////////////////////////////
+.form{
+    width: 100%;
+    
+    &__group{   
+        background-color: red;
+        margin-bottom: 2.5rem;
+        position: relative;
+
+    }
+    &__input{
+        width: 100%;
+        border: none;  
+        font-size: 16px;
+        outline: none;
+        border: 1px solid var(--color-grey-2);
+        padding: .6rem 0rem;
+        border-radius: 2px;
+        padding-left: 1rem;
+        display: flex;
+        box-sizing: content-box;
+        transition: .2s ease;
+    }
+
+
+    &__input:focus{
+        border: 1px solid rgb(0, 0, 0);
+
+    }
+
+
+
+    &__label{
+        position: absolute;
+        left: .9rem;
+        top: .3rem;
+        color: #b8b8b8;
+        font-size: 20px;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    &__input:focus + &__label, &__input:valid + &__label{
+        transform: translateY(-135%);
+        font-size: 17px;
+        color: black;
+        left: 0;
+    }
+
+
+}
