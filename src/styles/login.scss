@@ -85,7 +85,7 @@
         transition: all 0.3s ease;
     }
 
-    &__input:focus + &__label, &__input:valid + &__label{
+    &__input:focus + &__label, &__input:not(:placeholder-shown) + &__label{
         transform: translateY(-135%);
         font-size: 17px;
         color: black;
